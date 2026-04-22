@@ -1,721 +1,336 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- ==================== SEGURANÇA AVANÇADA ==================== -->
-<meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://code.iconify.design;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    font-src 'self' https://fonts.gstatic.com;
-    img-src 'self' data: https:;
-    connect-src 'self';
-    frame-src https://forms.gle https://wa.me;
-    base-uri 'self';
-    form-action 'self' https://forms.gle;
-">
-<meta http-equiv="X-Frame-Options" content="DENY">
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="X-XSS-Protection" content="1; mode=block">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="permissions-policy" content="camera=(), microphone=(), geolocation=(), payment=(), clipboard-write=(self)">
-<meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
-
-<!-- ==================== SEO ==================== -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Hego Digital",
-    "url": "https://hegodigital.ao",
-    "description": "Marketing digital para resultados reais em Angola.",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Luanda",
-        "addressCountry": "AO"
-    },
-    "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+244948466885",
-        "contactType": "customer service",
-        "availableLanguage": ["Portuguese"]
-    },
-    "sameAs": ["https://www.instagram.com/digitalhego.ao"]
-}
-</script>
-
-<meta name="description" content="Hego Digital - Marketing digital para resultados reais em Angola. Especialistas em tráfego pago, gestão de Instagram e branding.">
-<meta name="keywords" content="marketing digital, Angola, tráfego pago, gestão de tráfego, Hego Digital, Luanda">
-<meta name="author" content="Hego Digital">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta name="language" content="Portuguese">
-<meta name="geo.region" content="AO-LUA">
-<meta name="geo.placename" content="Luanda">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Hego Digital | Marketing Digital Angola">
-<meta property="og:description" content="Marketing digital para resultados reais em Angola.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hegodigital.ao">
-<meta property="og:locale" content="pt_PT">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Hego Digital | Marketing Digital Angola">
-<meta name="twitter:description" content="Marketing digital para resultados reais em Angola">
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="images/logo.png">
-<link rel="apple-touch-icon" href="images/logo.png">
-
-<!-- Canonical URL -->
-<link rel="canonical" href="https://hegodigital.ao">
-
-<!-- Preload para performance -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
-<link rel="preload" href="https://cdn.tailwindcss.com" as="script">
-<link rel="preload" href="https://code.iconify.design/3/3.1.0/iconify.min.js" as="script">
-
-<!-- DNS Prefetch -->
-<link rel="dns-prefetch" href="https://fonts.googleapis.com">
-<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
-<link rel="dns-prefetch" href="https://code.iconify.design">
-
-<title>Hego Digital | Marketing Digital Angola</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Iconify -->
-<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-
-<style>
-    * { font-family: 'Inter', sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
-    
-    :root {
-        --primary: #4f46e5;
-        --primary-light: #6366f1;
-        --primary-dark: #4338ca;
-        --accent: #f59e0b;
-        --dark-bg: #050505;
-        --card-bg: #0a0a0a;
-        --border: #1a1a1a;
-    }
-    
-    body { background: var(--dark-bg); overflow-x: hidden; opacity: 0; animation: fadeBody 0.3s ease forwards; }
-    @keyframes fadeBody { to { opacity: 1; } }
-    
-    ::selection { background: var(--primary); color: white; }
-    
-    .glass-nav {
-        background: rgba(5, 5, 5, 0.95);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    
-    .hero-bg {
-        background: radial-gradient(circle at 20% 30%, rgba(79, 70, 229, 0.1) 0%, transparent 50%),
-                    radial-gradient(circle at 80% 70%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
-    }
-    
-    .grid-pattern {
-        background-image: linear-gradient(rgba(79, 70, 229, 0.03) 1px, transparent 1px),
-                          linear-gradient(90deg, rgba(79, 70, 229, 0.03) 1px, transparent 1px);
-        background-size: 60px 60px;
-    }
-    
-    .section-content { display: none; }
-    .section-content.visible { display: block; }
-    
-    .tab-btn {
-        color: #9ca3af;
-        transition: all 0.2s ease;
-        font-weight: 500;
-        font-size: 0.85rem;
-        cursor: pointer;
-        background: transparent;
-        border: none;
-    }
-    .tab-btn:hover { color: #ffffff; background: rgba(79, 70, 229, 0.1); }
-    .tab-btn.active { color: #ffffff; background: rgba(79, 70, 229, 0.15); }
-    
-    /* Service Cards */
-    .service-card {
-        background: var(--card-bg);
-        border: 1px solid var(--border);
-        transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-        overflow: hidden;
-    }
-    .service-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: linear-gradient(90deg, var(--primary), var(--accent));
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    .service-card:hover { transform: translateY(-5px); border-color: rgba(79, 70, 229, 0.4); box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 0.5); }
-    .service-card:hover::before { opacity: 1; }
-    
-    .service-icon {
-        width: 48px;
-        height: 48px;
-        background: rgba(79, 70, 229, 0.1);
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-        transition: all 0.3s ease;
-    }
-    .service-card:hover .service-icon { background: rgba(79, 70, 229, 0.2); transform: scale(1.05); }
-    
-    /* Plan Cards */
-    .plan-card {
-        background: var(--card-bg);
-        border: 1px solid var(--border);
-        transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-    }
-    .plan-card:hover { transform: translateY(-6px); }
-    
-    .plan-card.popular {
-        border: 1px solid rgba(79, 70, 229, 0.6);
-        background: linear-gradient(135deg, rgba(79, 70, 229, 0.08), rgba(245, 158, 11, 0.02));
-        transform: scale(1.05);
-        box-shadow: 0 25px 45px -15px rgba(79, 70, 229, 0.3);
-        z-index: 10;
-    }
-    .plan-card.popular:hover { transform: scale(1.05) translateY(-6px); box-shadow: 0 30px 55px -18px rgba(79, 70, 229, 0.45); border-color: rgba(79, 70, 229, 0.8); }
-    
-    .popular-badge {
-        background: linear-gradient(135deg, var(--primary), var(--primary-light));
-        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
-        font-size: 0.7rem;
-    }
-    
-    /* Benefit Items - TODOS COM MESMO TAMANHO */
-    .benefit-item {
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-        font-size: 0.8rem;
-        color: #cbd5e1;
-        padding: 0.35rem 0;
-    }
-    
-    .benefit-item strong {
-        font-weight: 600;
-        color: white;
-    }
-    
-    /* FAQ */
-    .faq-item {
-        border: 1px solid var(--border);
-        background: var(--card-bg);
-        transition: all 0.2s ease;
-    }
-    .faq-item:hover { border-color: rgba(79, 70, 229, 0.4); }
-    
-    .faq-question {
-        transition: all 0.2s ease;
-        cursor: pointer;
-        width: 100%;
-        background: transparent;
-        border: none;
-        color: white;
-    }
-    .faq-question:hover { background: rgba(255, 255, 255, 0.02); }
-    .faq-answer { transition: all 0.3s ease; }
-    
-    /* Contact Cards */
-    .contact-card {
-        background: var(--card-bg);
-        border: 1px solid var(--border);
-        transition: all 0.3s ease;
-    }
-    .contact-card:hover { transform: translateY(-4px); border-color: rgba(79, 70, 229, 0.5); background: rgba(79, 70, 229, 0.03); }
-    
-    .mobile-menu { display: none; }
-    .mobile-menu.active { display: flex; }
-    
-    @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(30px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes float {
-        0%, 100% { transform: translateY(0) translateX(0); }
-        50% { transform: translateY(-20px) translateX(10px); }
-    }
-    .animate-float { animation: float 8s ease-in-out infinite; }
-    .animate-float-delayed { animation: float 10s ease-in-out infinite reverse; }
-    
-    ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: var(--card-bg); }
-    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
-    
-    @media (max-width: 1024px) {
-        .plan-card.popular { transform: scale(1); }
-        .plan-card.popular:hover { transform: translateY(-6px); }
-    }
-    @media (max-width: 768px) {
-        .benefit-item { font-size: 0.7rem; gap: 0.4rem; }
-        .service-icon { width: 40px; height: 40px; }
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hego Digital | Marketing Digital para Resultados Reais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            300: '#a5b4fc',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                            950: '#1e1b4b',
+                        },
+                        accent: {
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-white antialiased">
+<body class="bg-gray-950 text-white font-sans antialiased">
 
-<!-- Background Elements -->
-<div class="fixed inset-0 grid-pattern pointer-events-none"></div>
-<div class="fixed top-0 right-0 w-[500px] h-[500px] bg-indigo-500/5 rounded-full blur-3xl animate-float pointer-events-none"></div>
-<div class="fixed bottom-0 left-0 w-[400px] h-[400px] bg-amber-500/3 rounded-full blur-3xl animate-float-delayed pointer-events-none"></div>
-
-<!-- ==================== NAVBAR ==================== -->
-<nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
-    <div class="max-w-6xl mx-auto px-4 md:px-6">
-        <div class="flex items-center justify-between h-14 md:h-16">
-            <!-- Logo - MANTIDO EXATAMENTE COMO ESTAVA -->
-            <button onclick="showSection('home'); return false;" class="flex items-center gap-2 group cursor-pointer shrink-0 bg-transparent border-none" aria-label="Hego Digital - Início">
-                <img src="images/logo.png" alt="Hego Digital" class="w-8 h-8 md:w-9 md:h-9 rounded-lg object-contain shadow-md transition-transform group-hover:scale-105" width="36" height="36">
-                <div class="font-bold text-sm md:text-base tracking-tight text-white">Hego Digital</div>
-            </button>
-
-            <!-- Desktop Menu -->
-            <div class="hidden lg:flex items-center gap-0.5 bg-white/5 rounded-full px-1 py-0.5">
-                <button onclick="showSection('home')" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="home">Início</button>
-                <button onclick="showSection('planos')" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="planos">Planos</button>
-                <button onclick="showSection('servicos')" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="servicos">Serviços</button>
-                <button onclick="showSection('faq')" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="faq">FAQ</button>
-                <a href="https://forms.gle/5sNXwcPdKZbZCXYD7" target="_blank" rel="noopener noreferrer" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm">Fazer Diagnóstico</a>
-                <button onclick="showSection('contato')" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="contato">Contato</button>
-            </div>
-
-            <!-- WhatsApp Button -->
-            <div class="flex items-center gap-2">
-                <a href="https://wa.me/244948466885?text=Ol%C3%A1%20Hego%20Digital" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-medium px-4 md:px-5 py-2 rounded-lg text-xs md:text-sm shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-1.5">
-                    <span class="iconify text-sm md:text-base" data-icon="lucide:message-circle"></span>
-                    <span class="hidden sm:inline">Falar no WhatsApp</span>
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="#" class="flex items-center gap-2 group">
+                    <img src="images/logo.png" alt="Hego Digital" class="w-10 h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0 group-hover:scale-110 transition-transform" loading="lazy">
+                    <span class="text-lg lg:text-xl font-bold text-white">Hego Digital</span>
                 </a>
-                <button onclick="toggleMobileMenu()" class="lg:hidden p-1.5 rounded-lg hover:bg-white/10 transition-colors bg-transparent border-none cursor-pointer" aria-label="Menu">
-                    <span class="iconify text-xl" data-icon="lucide:menu"></span>
-                </button>
+                <div class="flex-1 flex items-center justify-center gap-1 md:gap-4 lg:gap-8 flex-wrap md:flex-nowrap overflow-x-auto pb-2 scrollbar-hide">
+                    <a href="#inicio" class="nav-tab px-3 py-2 text-sm md:text-base font-semibold text-gray-300 hover:text-white transition-colors whitespace-nowrap flex-shrink-0" data-target="inicio">Início</a>
+                    <a href="#planos" class="nav-tab px-3 py-2 text-sm md:text-base font-semibold text-gray-300 hover:text-white transition-colors whitespace-nowrap flex-shrink-0" data-target="planos">Planos</a>
+                    <a href="#servicos" class="nav-tab px-3 py-2 text-sm md:text-base font-semibold text-gray-300 hover:text-white transition-colors whitespace-nowrap flex-shrink-0" data-target="servicos">Serviços</a>
+                    <a href="#contacto" class="nav-tab px-3 py-2 text-sm md:text-base font-semibold text-gray-300 hover:text-white transition-colors whitespace-nowrap flex-shrink-0" data-target="contacto">Contacto</a>
+                    <a href="https://forms.gle/5sNXwcPdKZbZCXYD7" target="_blank" rel="noopener" class="nav-tab px-3 py-2 text-white font-semibold bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-500 hover:to-primary-600 px-4 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap flex-shrink-0 text-sm md:text-base" data-ignore="true">Fazer Diagnóstico</a>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="mobile-menu flex-col bg-[#0a0a0a] border-t border-white/10 px-4 py-3 lg:hidden">
-        <button onclick="showSection('home'); toggleMobileMenu()" class="text-left py-3 px-4 rounded-lg hover:bg-white/10 font-medium text-sm transition-all w-full bg-transparent border-none">Início</button>
-        <button onclick="showSection('planos'); toggleMobileMenu()" class="text-left py-3 px-4 rounded-lg hover:bg-white/10 font-medium text-sm transition-all w-full bg-transparent border-none">Planos</button>
-        <button onclick="showSection('servicos'); toggleMobileMenu()" class="text-left py-3 px-4 rounded-lg hover:bg-white/10 font-medium text-sm transition-all w-full bg-transparent border-none">Serviços</button>
-        <button onclick="showSection('faq'); toggleMobileMenu()" class="text-left py-3 px-4 rounded-lg hover:bg-white/10 font-medium text-sm transition-all w-full bg-transparent border-none">FAQ</button>
-        <a href="https://forms.gle/5sNXwcPdKZbZCXYD7" target="_blank" rel="noopener noreferrer" class="text-left py-3 px-4 rounded-lg hover:bg-white/10 font-medium text-sm transition-all block" onclick="toggleMobileMenu()">Fazer Diagnóstico</a>
-        <button onclick="showSection('contato'); toggleMobileMenu()" class="text-left py-3 px-4 rounded-lg hover:bg-indigo-500/20 font-medium text-sm transition-all w-full bg-transparent border-none">Contato</button>
-    </div>
-</nav>
+    <!-- Hero Section -->
+<section id="inicio" class="section active relative min-h-screen flex items-center overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-600/20 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent-500/15 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-500/5 rounded-full blur-3xl"></div>
+        </div>
+        <!-- Grid pattern -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 40px 40px;"></div>
 
-<main>
-<!-- ==================== HOME SECTION ==================== -->
-<section id="section-home" class="section-content visible hero-bg">
-    <div class="min-h-screen flex items-center justify-center px-4 pt-14">
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-indigo-500/20 bg-indigo-500/5 mb-5 md:mb-6">
-                <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse"></span>
-                <span class="text-[10px] md:text-xs font-medium text-indigo-400 uppercase tracking-wider">Marketing Digital Angola</span>
-            </div>
-            
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 tracking-tight">
-                Marketing digital para<br>
-                <span class="bg-gradient-to-r from-indigo-400 via-indigo-500 to-amber-500 bg-clip-text text-transparent">resultados reais</span>
-            </h1>
-            
-            <p class="text-sm md:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mb-8">
-                Estratégias de tráfego pago e branding para escalar o teu negócio em Angola.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
-                <button onclick="showSection('planos')" class="bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white font-semibold px-6 md:px-8 py-3 rounded-xl text-sm md:text-base shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2 cursor-pointer border-none">
-                    Ver Planos
-                    <span class="iconify text-sm" data-icon="lucide:arrow-right"></span>
-                </button>
-                <button onclick="showSection('contato')" class="border border-white/20 hover:border-indigo-400 text-white font-semibold px-6 md:px-8 py-3 rounded-xl text-sm md:text-base hover:bg-white/5 transition-all duration-300 flex items-center gap-2 cursor-pointer bg-transparent">
-                    <span class="iconify text-sm" data-icon="lucide:message-circle"></span>
-                    Falar com Consultor
-                </button>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+            <div class="max-w-3xl">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 bg-primary-500/10 border border-primary-500/20 rounded-full px-4 py-2 text-sm text-primary-300">
+                        <span class="w-2 h-2 bg-primary-400 rounded-full animate-pulse"></span>
+                        Marketing Digital em Angola
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-tight">
+                        Marketing digital para
+                        <span class="bg-gradient-to-r from-primary-400 via-primary-300 to-accent-400 bg-clip-text text-transparent"> resultados reais</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-400 max-w-xl leading-relaxed">
+                        Estratégias de tráfego pago e branding para escalar o teu negócio em Angola.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ==================== PLANOS SECTION ==================== -->
-<section id="section-planos" class="section-content hidden py-16 md:py-24 px-4">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-10 md:mb-14">
-            <span class="inline-flex items-center gap-2 text-[10px] md:text-xs font-medium text-indigo-400 uppercase tracking-wider px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-3">
-                <span class="iconify text-sm" data-icon="lucide:zap"></span>
-                Planos Mensais
-            </span>
-            <h2 class="text-3xl md:text-5xl font-bold mb-3 tracking-tight">Escolha o plano ideal</h2>
-            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">Comece hoje mesmo.</p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-6 md:gap-8 items-center">
-            <!-- Plano Essencial -->
-            <div class="plan-card rounded-2xl p-6 md:p-7">
-                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mb-5">
-                    <span class="iconify text-xl text-indigo-400" data-icon="lucide:sparkles"></span>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Essencial</h3>
-                <p class="text-gray-500 text-xs mb-4">Ideal para começar</p>
-                <div class="mb-6 pb-4 border-b border-white/10">
-                    <span class="text-2xl md:text-3xl font-bold text-white">Sob consulta</span>
-                    <span class="text-gray-500 text-sm">/mês</span>
-                </div>
-                <ul class="space-y-3">
-                    <li class="benefit-item"><span class="iconify text-emerald-500 text-sm" data-icon="lucide:check-circle"></span><span>Setup completo de tráfego pago</span></li>
-                    <li class="benefit-item"><span class="iconify text-emerald-500 text-sm" data-icon="lucide:check-circle"></span><span>1 campanha ativa</span></li>
-                    <li class="benefit-item"><span class="iconify text-emerald-500 text-sm" data-icon="lucide:check-circle"></span><span>Ajustes semanais</span></li>
-                    <li class="benefit-item"><span class="iconify text-emerald-500 text-sm" data-icon="lucide:check-circle"></span><span>Relatório mensal simples</span></li>
-                    <li class="benefit-item"><span class="iconify text-emerald-500 text-sm" data-icon="lucide:check-circle"></span><span>1 criativo estático</span></li>
-                </ul>
+    <!-- Plans Section -->
+<section id="planos" class="section relative py-24 sm:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-950 via-primary-950/20 to-gray-950"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block text-primary-400 text-sm font-semibold tracking-wider uppercase mb-4">Planos</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Escolha o plano ideal para o
+                    <span class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">seu negócio</span>
+                </h2>
+                <p class="text-gray-400 text-lg">Cada plano é pensado para entregar resultados reais e mensuráveis.</p>
             </div>
 
-            <!-- Plano Crescimento (Popular) -->
-            <div class="plan-card popular rounded-2xl p-6 md:p-7 relative">
-                <div class="absolute -top-3 left-1/2 -translate-x-1/2 popular-badge px-4 py-1 rounded-full">
-                    <span class="text-[10px] md:text-xs font-bold text-white uppercase tracking-wider">⭐ Mais Popular</span>
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Plan 1: PRESENÇA -->
+                <div class="group relative bg-gray-900/50 backdrop-blur border border-gray-800 rounded-3xl p-8 transition-all duration-300 hover:border-gray-700 hover:bg-gray-900/70 hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20">
+                    <div class="mb-8">
+                        <span class="text-xs font-bold tracking-widest text-primary-400 uppercase">Presença</span>
+                        <h3 class="text-2xl font-bold mt-2">Essencial Estratégico</h3>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-sm text-gray-500">Sob consulta</span>
+                        <div class="text-3xl font-bold mt-1">/mês</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Diagnóstico inicial</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Setup de tráfego</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">1 campanha ativa</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Otimização semanal</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Relatório simples</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Direção estratégica básica</li>
+                    </ul>
                 </div>
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center mb-5 shadow-lg">
-                    <span class="iconify text-xl text-white" data-icon="lucide:trending-up"></span>
-                </div>
-                <h3 class="text-xl font-bold mb-2">Crescimento</h3>
-                <p class="text-indigo-400 text-xs mb-4 font-medium">Para escalar resultados</p>
-                <div class="mb-6 pb-4 border-b border-white/10">
-                    <span class="text-2xl md:text-3xl font-bold text-white">Sob consulta</span>
-                    <span class="text-gray-500 text-sm">/mês</span>
-                </div>
-                <ul class="space-y-3">
-                    <li class="benefit-item"><span class="iconify text-indigo-400 text-sm" data-icon="lucide:zap"></span><span><strong>Setup de Tráfego Pago + Estratégia</strong></span></li>
-                    <li class="benefit-item"><span class="iconify text-indigo-400 text-sm" data-icon="lucide:zap"></span><span>2 campanhas de tráfego</span></li>
-                    <li class="benefit-item"><span class="iconify text-indigo-400 text-sm" data-icon="lucide:zap"></span><span>A/B testing contínuo</span></li>
-                    <li class="benefit-item"><span class="iconify text-indigo-400 text-sm" data-icon="lucide:zap"></span><span>Suporte via WhatsApp</span></li>
-                    <li class="benefit-item"><span class="iconify text-indigo-400 text-sm" data-icon="lucide:zap"></span><span>Relatório detalhado com insights</span></li>
-                    <li class="benefit-item"><span class="iconify text-indigo-400 text-sm" data-icon="lucide:zap"></span><span>2 criativos estáticos por mês</span></li>
-                </ul>
-            </div>
 
-            <!-- Plano Estrutura Completa -->
-            <div class="plan-card rounded-2xl p-6 md:p-7">
-                <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-5">
-                    <span class="iconify text-xl text-amber-400" data-icon="lucide:crown"></span>
+                <!-- Plan 2: PERFORMANCE (Popular) -->
+                <div class="group relative bg-gradient-to-b from-primary-900/40 to-gray-900/50 backdrop-blur border-2 border-primary-500/50 rounded-3xl p-8 transition-all duration-300 hover:border-primary-400 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary-500/20 md:scale-105">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                        <span class="bg-gradient-to-r from-primary-500 to-accent-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg shadow-primary-500/30">Mais Popular</span>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-xs font-bold tracking-widest text-accent-400 uppercase">Performance</span>
+                        <h3 class="text-2xl font-bold mt-2">Crescimento</h3>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-sm text-gray-500">Sob consulta</span>
+                        <div class="text-3xl font-bold mt-1">/mês</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Diagnóstico inicial</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Setup de tráfego + Estratégia de aquisição</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">2 campanhas ativas</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">A/B testing</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Suporte via WhatsApp</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Relatórios com insights reais</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Automação do WhatsApp Business</li>
+                    </ul>
                 </div>
-                <h3 class="text-xl font-bold mb-2">Estrutura Completa</h3>
-                <p class="text-gray-500 text-xs mb-4">Sistema completo de vendas</p>
-                <div class="mb-6 pb-4 border-b border-white/10">
-                    <span class="text-2xl md:text-3xl font-bold text-white">Sob consulta</span>
-                    <span class="text-gray-500 text-sm">/mês</span>
+
+                <!-- Plan 3: ESCALA -->
+                <div class="group relative bg-gray-900/50 backdrop-blur border border-gray-800 rounded-3xl p-8 transition-all duration-300 hover:border-gray-700 hover:bg-gray-900/70 hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20">
+                    <div class="mb-8">
+                        <span class="text-xs font-bold tracking-widest text-green-400 uppercase">Escala</span>
+                        <h3 class="text-2xl font-bold mt-2">Estrutura Completa</h3>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-sm text-gray-500">Sob consulta</span>
+                        <div class="text-3xl font-bold mt-1">/mês</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Diagnóstico completo</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Estratégia completa de funil</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Até 4 campanhas</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Otimização avançada</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Planeamento de crescimento</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Suporte via WhatsApp</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Relatórios com insights reais</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Automação do WhatsApp Business</li>
+                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Reunião estratégica mensal</li>
+                    </ul>
                 </div>
-                <ul class="space-y-3">
-                    <li class="benefit-item"><span class="iconify text-amber-500 text-sm" data-icon="lucide:crown"></span><span>Landing page personalizada</span></li>
-                    <li class="benefit-item"><span class="iconify text-amber-500 text-sm" data-icon="lucide:crown"></span><span>Até 4 campanhas de tráfego</span></li>
-                    <li class="benefit-item"><span class="iconify text-amber-500 text-sm" data-icon="lucide:crown"></span><span>Estratégia 360° completa</span></li>
-                    <li class="benefit-item"><span class="iconify text-amber-500 text-sm" data-icon="lucide:crown"></span><span>Funil comercial automatizado</span></li>
-                    <li class="benefit-item"><span class="iconify text-amber-500 text-sm" data-icon="lucide:crown"></span><span>Reunião estratégica mensal</span></li>
-                    <li class="benefit-item"><span class="iconify text-amber-500 text-sm" data-icon="lucide:crown"></span><span>2 criativos + 1 vídeo curto</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ==================== SERVIÇOS SECTION ==================== -->
-<section id="section-servicos" class="section-content hidden py-16 md:py-24 px-4">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-10 md:mb-14">
-            <span class="inline-flex items-center gap-2 text-[10px] md:text-xs font-medium text-indigo-400 uppercase tracking-wider px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-3">
-                <span class="iconify text-sm" data-icon="lucide:layers"></span>
-                Soluções completas
-            </span>
-            <h2 class="text-3xl md:text-5xl font-bold mb-3 tracking-tight">Soluções completas</h2>
-            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">Tudo o que seu negócio precisa para crescer online</p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-            <!-- Landing Page -->
-            <div class="service-card rounded-xl p-5">
-                <div class="service-icon"><span class="iconify text-2xl text-indigo-400" data-icon="lucide:laptop"></span></div>
-                <h3 class="text-base md:text-lg font-bold mb-2">Landing Page de Conversão</h3>
-                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Páginas otimizadas para converter visitantes em clientes. Design responsivo e foco em resultados.</p>
-            </div>
-            <!-- Gestão de Instagram -->
-            <div class="service-card rounded-xl p-5">
-                <div class="service-icon"><span class="iconify text-2xl text-purple-400" data-icon="lucide:instagram"></span></div>
-                <h3 class="text-base md:text-lg font-bold mb-2">Gestão de Instagram</h3>
-                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Estratégia de conteúdo, calendário editorial e crescimento orgânico para fortalecer sua marca.</p>
-            </div>
-            <!-- Pack Criativos -->
-            <div class="service-card rounded-xl p-5">
-                <div class="service-icon"><span class="iconify text-2xl text-amber-400" data-icon="lucide:image"></span></div>
-                <h3 class="text-base md:text-lg font-bold mb-2">Pack Criativos para Anúncios</h3>
-                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Artes estáticas e vídeos profissionais formatados para Facebook, Instagram e Google Ads.</p>
-            </div>
-            <!-- Identidade Visual -->
-            <div class="service-card rounded-xl p-5">
-                <div class="service-icon"><span class="iconify text-2xl text-blue-400" data-icon="lucide:palette"></span></div>
-                <h3 class="text-base md:text-lg font-bold mb-2">Identidade Visual</h3>
-                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Design de logotipo único, paleta de cores e manual da marca para presença profissional.</p>
-            </div>
-            <!-- Google Business Profile -->
-            <div class="service-card rounded-xl p-5">
-                <div class="service-icon"><span class="iconify text-2xl text-emerald-400" data-icon="lucide:map-pin"></span></div>
-                <h3 class="text-base md:text-lg font-bold mb-2">Google Business Profile</h3>
-                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Otimização do perfil para aparecer nas pesquisas locais e no Google Maps.</p>
-            </div>
-            <!-- Consultoria Estratégica -->
-            <div class="service-card rounded-xl p-5">
-                <div class="service-icon"><span class="iconify text-2xl text-rose-400" data-icon="lucide:briefcase"></span></div>
-                <h3 class="text-base md:text-lg font-bold mb-2">Consultoria Estratégica</h3>
-                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Análise do negócio, definição de metas e plano de ação personalizado.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ==================== FAQ SECTION (SEM A PERGUNTA REMOVIDA) ==================== -->
-<section id="section-faq" class="section-content hidden py-16 md:py-24 px-4">
-    <div class="max-w-3xl mx-auto">
-        <div class="text-center mb-10 md:mb-14">
-            <span class="inline-flex items-center gap-2 text-[10px] md:text-xs font-medium text-indigo-400 uppercase tracking-wider px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-3">
-                <span class="iconify text-sm" data-icon="lucide:help-circle"></span>
-                Dúvidas Frequentes
-            </span>
-            <h2 class="text-3xl md:text-5xl font-bold mb-3 tracking-tight">Perguntas frequentes</h2>
-            <p class="text-gray-400 text-sm md:text-base">Tudo o que precisa saber antes de começar</p>
-        </div>
+    <!-- Services Section -->
+<section id="servicos" class="section relative py-24 sm:py-32">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block text-primary-400 text-sm font-semibold tracking-wider uppercase mb-4">Serviços</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Tudo que seu negócio
+                    <span class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent"> precisa</span>
+                </h2>
+                <p class="text-gray-400 text-lg">Tudo o que seu negócio precisa para crescer online</p>
+            </div>
 
-        <div class="space-y-3">
-            <div class="faq-item rounded-xl overflow-hidden">
-                <button onclick="toggleFaq(this)" class="faq-question w-full flex items-center justify-between p-4 text-left">
-                    <span class="text-sm md:text-base font-medium">Preciso de contrato de fidelização?</span>
-                    <span class="iconify faq-icon text-gray-400 text-xl transition-transform" data-icon="lucide:plus"></span>
-                </button>
-                <div class="faq-answer hidden px-4 pb-4"><p class="text-gray-400 text-sm leading-relaxed">Não! Os nossos planos são mensais, sem fidelização. Pode cancelar quando quiser, sem qualquer custo adicional.</p></div>
-            </div>
-            <div class="faq-item rounded-xl overflow-hidden">
-                <button onclick="toggleFaq(this)" class="faq-question w-full flex items-center justify-between p-4 text-left">
-                    <span class="text-sm md:text-base font-medium">Os planos incluem suporte?</span>
-                    <span class="iconify faq-icon text-gray-400 text-xl transition-transform" data-icon="lucide:plus"></span>
-                </button>
-                <div class="faq-answer hidden px-4 pb-4"><p class="text-gray-400 text-sm leading-relaxed">Sim! Todos os planos incluem acompanhamento via WhatsApp e relatórios mensais.</p></div>
-            </div>
-            <!-- Pergunta "Quanto tempo demora para ver resultados?" foi REMOVIDA -->
-            <div class="faq-item rounded-xl overflow-hidden">
-                <button onclick="toggleFaq(this)" class="faq-question w-full flex items-center justify-between p-4 text-left">
-                    <span class="text-sm md:text-base font-medium">Qual o investimento mínimo em anúncios?</span>
-                    <span class="iconify faq-icon text-gray-400 text-xl transition-transform" data-icon="lucide:plus"></span>
-                </button>
-                <div class="faq-answer hidden px-4 pb-4"><p class="text-gray-400 text-sm leading-relaxed">Trabalhamos com valores a partir de 50.000 KZ/mês em verba de mídia.</p></div>
-            </div>
-            <div class="faq-item rounded-xl overflow-hidden">
-                <button onclick="toggleFaq(this)" class="faq-question w-full flex items-center justify-between p-4 text-left">
-                    <span class="text-sm md:text-base font-medium">Atendem empresas de qualquer setor?</span>
-                    <span class="iconify faq-icon text-gray-400 text-xl transition-transform" data-icon="lucide:plus"></span>
-                </button>
-                <div class="faq-answer hidden px-4 pb-4"><p class="text-gray-400 text-sm leading-relaxed">Sim! Trabalhamos com comércio, serviços, imobiliário, educação, saúde e muito mais.</p></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ==================== CONTATO SECTION ==================== -->
-<section id="section-contato" class="section-content hidden py-16 md:py-24 px-4">
-    <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-10 md:mb-14">
-            <span class="inline-flex items-center gap-2 text-[10px] md:text-xs font-medium text-indigo-400 uppercase tracking-wider px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-3">
-                <span class="iconify text-sm" data-icon="lucide:phone-call"></span>
-                Fala com nossa equipe
-            </span>
-            <h2 class="text-3xl md:text-5xl font-bold mb-3 tracking-tight">Vamos conversar?</h2>
-            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">Estamos prontos para ajudar seu negócio a crescer</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-4 md:gap-5">
-            <div class="contact-card rounded-xl p-5 text-center">
-                <div class="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center mx-auto mb-3">
-                    <span class="iconify text-xl text-indigo-400" data-icon="lucide:mail"></span>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1: Landing Page -->
+                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-primary-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-primary-500/10 rounded-full blur-2xl group-hover:bg-primary-500/20 transition-all"></div>
+                    <div class="relative">
+                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-primary-300 transition-colors">Landing Page de Conversão</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Páginas otimizadas para converter visitantes em clientes. Design responsivo e foco em resultados.</p>
+                    </div>
                 </div>
-                <h3 class="font-semibold mb-1">Email</h3>
-                <p class="text-gray-400 text-sm mb-3">geral@hegodigital.online</p>
-                <a href="mailto:geral@hegodigital.online" class="inline-block text-indigo-400 hover:text-indigo-300 text-sm font-medium transition">Enviar email →</a>
-            </div>
-            <div class="contact-card rounded-xl p-5 text-center">
-                <div class="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center mx-auto mb-3">
-                    <span class="iconify text-xl text-indigo-400" data-icon="lucide:phone"></span>
+                <!-- Service 2: Instagram -->
+                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-pink-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-pink-500/10 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-pink-500/10 rounded-full blur-2xl group-hover:bg-pink-500/20 transition-all"></div>
+                    <div class="relative">
+                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-pink-300 transition-colors">Gestão de Instagram</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Estratégia de conteúdo, calendário editorial e crescimento orgânico para fortalecer sua marca.</p>
+                    </div>
                 </div>
-                <h3 class="font-semibold mb-1">Telefone</h3>
-                <p class="text-gray-400 text-sm mb-3">+244 948 466 885</p>
-                <a href="tel:+244948466885" class="inline-block text-indigo-400 hover:text-indigo-300 text-sm font-medium transition">Ligar agora →</a>
-            </div>
-            <div class="contact-card rounded-xl p-5 text-center">
-                <div class="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center mx-auto mb-3">
-                    <span class="iconify text-xl text-indigo-400" data-icon="lucide:map-pin"></span>
+                <!-- Service 3: Criativos -->
+                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-purple-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/10 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all"></div>
+                    <div class="relative">
+                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-purple-300 transition-colors">Pack Criativos para Anúncios</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Artes estáticas e vídeos profissionais formatados para Facebook, Instagram e Google Ads.</p>
+                    </div>
                 </div>
-                <h3 class="font-semibold mb-1">Localização</h3>
-                <p class="text-gray-400 text-sm mb-3">Luanda, Angola</p>
-                <span class="inline-block text-gray-500 text-sm">Atendemos todo o país</span>
+                <!-- Service 4: Identidade Visual -->
+                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-amber-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-500/10 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/20 transition-all"></div>
+                    <div class="relative">
+                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-amber-300 transition-colors">Identidade Visual</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Design de logotipo único, paleta de cores e manual da marca para presença profissional.</p>
+                    </div>
+                </div>
+                <!-- Service 5: Google Business -->
+                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-emerald-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/10 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all"></div>
+                    <div class="relative">
+                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-emerald-300 transition-colors">Google Business Profile</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Otimização do perfil para aparecer nas pesquisas locais e no Google Maps.</p>
+                    </div>
+                </div>
+                <!-- Service 6: Consultoria -->
+                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-cyan-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/10 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all"></div>
+                    <div class="relative">
+                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-cyan-300 transition-colors">Consultoria Estratégica</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Análise do negócio, definição de metas e plano de ação personalizado.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-</main>
+    </section>
 
-<!-- ==================== FOOTER ==================== -->
-<footer class="border-t border-white/10 py-10 px-4 mt-8">
-    <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-            <div class="col-span-2 md:col-span-1">
-                <div class="flex items-center gap-2 mb-3">
-                    <img src="images/logo.png" alt="Hego Digital" class="w-8 h-8 rounded-lg object-contain" width="32" height="32">
-                    <div class="font-bold text-sm text-white">Hego Digital</div>
+    <!-- Contact Section -->
+<section id="contacto" class="section relative py-24 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block text-primary-400 text-sm font-semibold tracking-wider uppercase mb-4">Contacto</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Vamos
+                    <span class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">conversar?</span>
+                </h2>
+                <p class="text-gray-400 text-lg">Estamos prontos para ajudar seu negócio a crescer</p>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <!-- Email -->
+                <a href="mailto:geral@hegodigital.online" class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-7 text-center transition-all hover:border-primary-500/50 hover:bg-gray-900/80 hover:-translate-y-1">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">Email</p>
+                    <p class="text-white font-medium mb-3">geral@hegodigital.online</p>
+                    <span class="text-primary-400 text-sm font-medium">Enviar email</span>
+                </a>
+                <!-- Phone -->
+                <a href="tel:+244948466885" class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-7 text-center transition-all hover:border-green-500/50 hover:bg-gray-900/80 hover:-translate-y-1">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">Telefone</p>
+                    <p class="text-white font-medium mb-3">+244 948 466 885</p>
+                    <span class="text-green-400 text-sm font-medium">Ligar agora</span>
+                </a>
+                <!-- Location -->
+                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-7 text-center transition-all hover:border-accent-500/50 hover:bg-gray-900/80 hover:-translate-y-1">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">Localização</p>
+                    <p class="text-white font-medium mb-3">Luanda, Angola</p>
+                    <span class="text-accent-400 text-sm font-medium">Atendemos todo o país</span>
                 </div>
-                <p class="text-gray-500 text-xs">Marketing digital para resultados reais em Angola.</p>
             </div>
-            <div>
-                <h4 class="font-semibold mb-3 text-xs text-gray-400">Navegação</h4>
-                <ul class="space-y-1.5 text-xs text-gray-500">
-                    <li><button onclick="showSection('planos')" class="hover:text-indigo-400 transition bg-transparent border-none cursor-pointer">Planos</button></li>
-                    <li><button onclick="showSection('servicos')" class="hover:text-indigo-400 transition bg-transparent border-none cursor-pointer">Serviços</button></li>
-                    <li><button onclick="showSection('faq')" class="hover:text-indigo-400 transition bg-transparent border-none cursor-pointer">FAQ</button></li>
-                    <li><a href="https://forms.gle/5sNXwcPdKZbZCXYD7" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition">Fazer Diagnóstico</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-3 text-xs text-gray-400">Contacto</h4>
-                <ul class="space-y-1.5 text-xs text-gray-500">
-                    <li>+244 948 466 885</li>
-                    <li>geral@hegodigital.online</li>
-                    <li>Luanda, Angola</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-3 text-xs text-gray-400">Redes Sociais</h4>
-                <div class="flex gap-3">
-                    <a href="https://www.instagram.com/digitalhego.ao" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-indigo-500/20 transition-colors group">
-                        <span class="iconify text-sm text-gray-400 group-hover:text-indigo-400 transition" data-icon="lucide:instagram"></span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Brand -->
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <a href="#" class="flex items-center gap-2 mb-5">
+                        <img src="images/logo.png" alt="Hego Digital" class="w-10 h-10 object-contain flex-shrink-0" loading="lazy">
+                    </a>
+                    <p class="text-gray-500 text-sm leading-relaxed">Marketing digital para resultados reais em Angola.</p>
+                </div>
+                <!-- Navigation -->
+                <div>
+                    <h4 class="text-sm font-semibold text-white mb-5 uppercase tracking-wider">Navegação</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#planos" class="text-sm text-gray-500 hover:text-white transition-colors">Planos</a></li>
+                        <li><a href="#servicos" class="text-sm text-gray-500 hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="#contacto" class="text-sm text-gray-500 hover:text-white transition-colors">Contato</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdADaw6e0DTBXD0YqjwB2KKdicjtI9Melci1pO77LEyQv7WCw/viewform" target="_blank" class="text-sm text-gray-500 hover:text-white transition-colors">Diagnóstico</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-sm font-semibold text-white mb-5 uppercase tracking-wider">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li><a href="tel:+244948466885" class="text-sm text-gray-500 hover:text-white transition-colors">+244 948 466 885</a></li>
+                        <li><a href="mailto:geral@hegodigital.online" class="text-sm text-gray-500 hover:text-white transition-colors">geral@hegodigital.online</a></li>
+                        <li><span class="text-sm text-gray-500">Luanda, Angola</span></li>
+                    </ul>
+                </div>
+                <!-- Social -->
+                <div>
+                    <h4 class="text-sm font-semibold text-white mb-5 uppercase tracking-wider">Redes Sociais</h4>
+                    <a href="https://www.instagram.com/digitalhego.ao?igsh=c3ZrcnJtM2p4endk" target="_blank" class="inline-flex items-center gap-3 text-sm text-gray-500 hover:text-white transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-label="Instagram"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+<parameter name="aria-label">
+                        Siga-nos no Instagram
                     </a>
                 </div>
-                <p class="text-gray-500 text-xs mt-3">Siga-nos no Instagram</p>
             </div>
         </div>
-        <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
-            <p>© 2026 Hego Digital. Todos os direitos reservados.</p>
-            <div class="flex gap-5">
-                <a href="#" class="hover:text-indigo-400 transition">Privacidade</a>
-                <a href="#" class="hover:text-indigo-400 transition">Termos</a>
+        <div class="border-t border-gray-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-xs text-gray-600">© 2026 Hego Digital. Todos os direitos reservados.</p>
+                <a href="https://www.instagram.com/digitalhego.ao?igsh=c3ZrcnJtM2p4endk" target="_blank" class="text-xs text-gray-600 hover:text-gray-400 transition-colors">@digitalhego.ao</a>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script>
-// ==================== NAVEGAÇÃO ====================
-function showSection(sectionId) {
-    document.querySelectorAll('.section-content').forEach(section => {
-        section.classList.remove('visible');
-        section.classList.add('hidden');
-    });
-    
-    const target = document.getElementById('section-' + sectionId);
-    if (target) {
-        target.classList.remove('hidden');
-        target.classList.add('visible');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-        if (btn.tagName !== 'A') {
-            btn.classList.remove('active', 'text-white', 'bg-indigo-500/15');
-            btn.classList.add('text-gray-400');
-        }
-    });
-    
-    const activeBtn = document.querySelector(`.tab-btn[data-tab="${sectionId}"]`);
-    if (activeBtn && activeBtn.tagName !== 'A') {
-        activeBtn.classList.remove('text-gray-400');
-        activeBtn.classList.add('active', 'text-white', 'bg-indigo-500/15');
-    }
-}
+    <!-- Floating WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send/?phone=244948466885&text=Ol%C3%A1+Hego+Digital&type=phone_number&app_absent=0" target="_blank" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-green-500 hover:bg-green-400 rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 transition-all hover:scale-110 group" aria-label="WhatsApp">
+        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c0-5.45 4.435-9.884 9.884-9.884 2.629 0 5.103 1.026 6.969 2.888a9.824 9.824 0 012.888 6.969c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="absolute right-full mr-3 bg-gray-900 text-white text-xs font-medium px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">Fale connosco!</span>
+    </a>
 
-function toggleMobileMenu() {
-    const menu = document.getElementById('mobile-menu');
-    if (menu) menu.classList.toggle('active');
-}
-
-function toggleFaq(btn) {
-    const item = btn.closest('.faq-item');
-    const answer = item.querySelector('.faq-answer');
-    const icon = btn.querySelector('.faq-icon');
-    const isOpen = answer && !answer.classList.contains('hidden');
-    
-    document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
-    document.querySelectorAll('.faq-icon').forEach(i => {
-        i.setAttribute('data-icon', 'lucide:plus');
-        i.style.transform = 'rotate(0deg)';
-    });
-    
-    if (!isOpen && answer && icon) {
-        answer.classList.remove('hidden');
-        icon.setAttribute('data-icon', 'lucide:minus');
-        icon.style.transform = 'rotate(180deg)';
-    }
-}
-
-// Inicialização
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.section-content').forEach(section => {
-        section.classList.add('hidden');
-    });
-    const homeSection = document.getElementById('section-home');
-    if (homeSection) {
-        homeSection.classList.remove('hidden');
-        homeSection.classList.add('visible');
-    }
-    
-    const homeTab = document.querySelector('.tab-btn[data-tab="home"]');
-    if (homeTab) {
-        homeTab.classList.add('active', 'text-white', 'bg-indigo-500/15');
-    }
-});
-
-// Animações
-if (window.IntersectionObserver) {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.animation = 'fadeInUp 0.5s ease forwards';
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-    
-    document.querySelectorAll('.service-card, .plan-card, .faq-item, .contact-card').forEach(el => {
-        el.style.opacity = '0';
-        observer.observe(el);
-    });
-}
-</script>
+    <script src="script.js"></script>
 </body>
 </html>
