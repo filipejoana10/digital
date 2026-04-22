@@ -24,16 +24,14 @@
 <meta name="permissions-policy" content="camera=(), microphone=(), geolocation=(), payment=(), clipboard-write=(self)">
 <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
 
-<!-- ==================== SEO - GOOGLE RICH RESULTS ==================== -->
+<!-- ==================== SEO ==================== -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Hego Digital",
     "url": "https://hegodigital.ao",
-    "logo": "https://hegodigital.ao/imagens/logo.jpg.png",
-    "image": "https://hegodigital.ao/imagens/logo.jpg.png",
-    "description": "Marketing digital para resultados reais em Angola. Tráfego pago, gestão de redes sociais e branding.",
+    "description": "Marketing digital para resultados reais em Angola.",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Luanda",
@@ -49,42 +47,17 @@
 }
 </script>
 
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Hego Digital",
-    "image": "https://hegodigital.ao/imagens/logo.jpg.png",
-    "description": "Marketing digital para resultados reais em Angola",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Luanda",
-        "addressCountry": "AO"
-    },
-    "telephone": "+244948466885",
-    "priceRange": "$$",
-    "openingHours": "Mo-Fr 09:00-18:00"
-}
-</script>
-
-<!-- ==================== SEO BÁSICO ==================== -->
 <meta name="description" content="Hego Digital - Marketing digital para resultados reais em Angola. Especialistas em tráfego pago, gestão de Instagram e branding.">
-<meta name="keywords" content="marketing digital, Angola, tráfego pago, gestão de tráfego, Hego Digital, Luanda, SEO Angola, anúncios Facebook, Google Ads">
+<meta name="keywords" content="marketing digital, Angola, tráfego pago, gestão de tráfego, Hego Digital, Luanda">
 <meta name="author" content="Hego Digital">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta name="googlebot" content="index, follow">
 <meta name="language" content="Portuguese">
 <meta name="geo.region" content="AO-LUA">
 <meta name="geo.placename" content="Luanda">
-<meta name="geo.position" content="-8.838333;13.234444">
-<meta name="ICBM" content="-8.838333, 13.234444">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Hego Digital | Marketing Digital Angola">
-<meta property="og:description" content="Marketing digital para resultados reais em Angola. Estratégias de tráfego pago e branding para escalar seu negócio.">
-<meta property="og:image" content="https://hegodigital.ao/imagens/logo.jpg.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:description" content="Marketing digital para resultados reais em Angola.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://hegodigital.ao">
 <meta property="og:locale" content="pt_PT">
@@ -93,16 +66,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Hego Digital | Marketing Digital Angola">
 <meta name="twitter:description" content="Marketing digital para resultados reais em Angola">
-<meta name="twitter:image" content="https://hegodigital.ao/imagens/logo.jpg.png">
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" sizes="16x16" href="imagens/logo.jpg.png">
-<link rel="icon" type="image/png" sizes="32x32" href="imagens/logo.jpg.png">
-<link rel="icon" type="image/png" sizes="48x48" href="imagens/logo.jpg.png">
-<link rel="apple-touch-icon" sizes="57x57" href="imagens/logo.jpg.png">
-<link rel="apple-touch-icon" sizes="72x72" href="imagens/logo.jpg.png">
-<link rel="apple-touch-icon" sizes="114x114" href="imagens/logo.jpg.png">
-<link rel="apple-touch-icon" sizes="180x180" href="imagens/logo.jpg.png">
+<link rel="icon" type="image/png" href="imagens/logo.jpg.png">
+<link rel="apple-touch-icon" href="imagens/logo.jpg.png">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="https://hegodigital.ao">
@@ -118,7 +85,7 @@
 <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
 <link rel="dns-prefetch" href="https://code.iconify.design">
 
-<title>Hego Digital | Marketing Digital Angola - Tráfego Pago e Branding</title>
+<title>Hego Digital | Marketing Digital Angola</title>
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -130,7 +97,6 @@
 <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
 <style>
-    /* ==================== CSS CRÍTICO ==================== */
     * { font-family: 'Inter', sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
     
     :root {
@@ -181,6 +147,7 @@
     .tab-btn:hover { color: #ffffff; background: rgba(79, 70, 229, 0.1); }
     .tab-btn.active { color: #ffffff; background: rgba(79, 70, 229, 0.15); }
     
+    /* Service Cards */
     .service-card {
         background: var(--card-bg);
         border: 1px solid var(--border);
@@ -215,6 +182,7 @@
     }
     .service-card:hover .service-icon { background: rgba(79, 70, 229, 0.2); transform: scale(1.05); }
     
+    /* Plan Cards */
     .plan-card {
         background: var(--card-bg);
         border: 1px solid var(--border);
@@ -238,6 +206,7 @@
         font-size: 0.7rem;
     }
     
+    /* Benefit Items - TODOS COM MESMO TAMANHO */
     .benefit-item {
         display: flex;
         align-items: center;
@@ -247,6 +216,12 @@
         padding: 0.35rem 0;
     }
     
+    .benefit-item strong {
+        font-weight: 600;
+        color: white;
+    }
+    
+    /* FAQ */
     .faq-item {
         border: 1px solid var(--border);
         background: var(--card-bg);
@@ -265,6 +240,7 @@
     .faq-question:hover { background: rgba(255, 255, 255, 0.02); }
     .faq-answer { transition: all 0.3s ease; }
     
+    /* Contact Cards */
     .contact-card {
         background: var(--card-bg);
         border: 1px solid var(--border);
@@ -311,7 +287,7 @@
 <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
         <div class="flex items-center justify-between h-14 md:h-16">
-            <!-- Logo -->
+            <!-- Logo - MANTIDO EXATAMENTE COMO ESTAVA -->
             <button onclick="showSection('home'); return false;" class="flex items-center gap-2 group cursor-pointer shrink-0 bg-transparent border-none" aria-label="Hego Digital - Início">
                 <img src="imagens/logo.jpg.png" alt="Hego Digital" class="w-8 h-8 md:w-9 md:h-9 rounded-lg object-contain shadow-md transition-transform group-hover:scale-105" width="36" height="36">
                 <div class="font-bold text-sm md:text-base tracking-tight text-white">Hego Digital</div>
@@ -323,7 +299,7 @@
                 <button onclick="showSection('planos')" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="planos">Planos</button>
                 <button onclick="showSection('servicos')" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="servicos">Serviços</button>
                 <button onclick="showSection('faq')" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="faq">FAQ</button>
-                <a href="https://forms.gle/5sNXwcPdKZbZCXYD7" target="_blank" rel="noopener noreferrer" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="diagnostico">Fazer Diagnóstico</a>
+                <a href="https://forms.gle/5sNXwcPdKZbZCXYD7" target="_blank" rel="noopener noreferrer" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm">Fazer Diagnóstico</a>
                 <button onclick="showSection('contato')" class="tab-btn px-4 py-1.5 rounded-full transition-all text-sm" data-tab="contato">Contato</button>
             </div>
 
@@ -375,7 +351,10 @@
                     Ver Planos
                     <span class="iconify text-sm" data-icon="lucide:arrow-right"></span>
                 </button>
-                
+                <button onclick="showSection('contato')" class="border border-white/20 hover:border-indigo-400 text-white font-semibold px-6 md:px-8 py-3 rounded-xl text-sm md:text-base hover:bg-white/5 transition-all duration-300 flex items-center gap-2 cursor-pointer bg-transparent">
+                    <span class="iconify text-sm" data-icon="lucide:message-circle"></span>
+                    Falar com Consultor
+                </button>
             </div>
         </div>
     </div>
@@ -468,24 +447,54 @@
         <div class="text-center mb-10 md:mb-14">
             <span class="inline-flex items-center gap-2 text-[10px] md:text-xs font-medium text-indigo-400 uppercase tracking-wider px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-3">
                 <span class="iconify text-sm" data-icon="lucide:layers"></span>
-                Nossos Serviços
+                Soluções completas
             </span>
             <h2 class="text-3xl md:text-5xl font-bold mb-3 tracking-tight">Soluções completas</h2>
             <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">Tudo o que seu negócio precisa para crescer online</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-            <div class="service-card rounded-xl p-5"><div class="service-icon"><span class="iconify text-2xl text-indigo-400" data-icon="lucide:laptop"></span></div><h3 class="text-base md:text-lg font-bold mb-2">Landing Page de Conversão</h3><p class="text-gray-400 text-xs md:text-sm leading-relaxed">Páginas otimizadas para converter visitantes em clientes. Design responsivo e foco em resultados.</p></div>
-            <div class="service-card rounded-xl p-5"><div class="service-icon"><span class="iconify text-2xl text-purple-400" data-icon="lucide:instagram"></span></div><h3 class="text-base md:text-lg font-bold mb-2">Gestão de Instagram</h3><p class="text-gray-400 text-xs md:text-sm leading-relaxed">Estratégia de conteúdo, calendário editorial e crescimento orgânico para fortalecer sua marca.</p></div>
-            <div class="service-card rounded-xl p-5"><div class="service-icon"><span class="iconify text-2xl text-amber-400" data-icon="lucide:image"></span></div><h3 class="text-base md:text-lg font-bold mb-2">Pack Criativos para Anúncios</h3><p class="text-gray-400 text-xs md:text-sm leading-relaxed">Artes estáticas e vídeos profissionais formatados para Facebook, Instagram e Google Ads.</p></div>
-            <div class="service-card rounded-xl p-5"><div class="service-icon"><span class="iconify text-2xl text-blue-400" data-icon="lucide:palette"></span></div><h3 class="text-base md:text-lg font-bold mb-2">Identidade Visual</h3><p class="text-gray-400 text-xs md:text-sm leading-relaxed">Design de logotipo único, paleta de cores e manual da marca para presença profissional.</p></div>
-            <div class="service-card rounded-xl p-5"><div class="service-icon"><span class="iconify text-2xl text-emerald-400" data-icon="lucide:map-pin"></span></div><h3 class="text-base md:text-lg font-bold mb-2">Google Business Profile</h3><p class="text-gray-400 text-xs md:text-sm leading-relaxed">Otimização do perfil para aparecer nas pesquisas locais e no Google Maps.</p></div>
-            <div class="service-card rounded-xl p-5"><div class="service-icon"><span class="iconify text-2xl text-rose-400" data-icon="lucide:briefcase"></span></div><h3 class="text-base md:text-lg font-bold mb-2">Consultoria Estratégica</h3><p class="text-gray-400 text-xs md:text-sm leading-relaxed">Análise do negócio, definição de metas e plano de ação personalizado.</p></div>
+            <!-- Landing Page -->
+            <div class="service-card rounded-xl p-5">
+                <div class="service-icon"><span class="iconify text-2xl text-indigo-400" data-icon="lucide:laptop"></span></div>
+                <h3 class="text-base md:text-lg font-bold mb-2">Landing Page de Conversão</h3>
+                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Páginas otimizadas para converter visitantes em clientes. Design responsivo e foco em resultados.</p>
+            </div>
+            <!-- Gestão de Instagram -->
+            <div class="service-card rounded-xl p-5">
+                <div class="service-icon"><span class="iconify text-2xl text-purple-400" data-icon="lucide:instagram"></span></div>
+                <h3 class="text-base md:text-lg font-bold mb-2">Gestão de Instagram</h3>
+                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Estratégia de conteúdo, calendário editorial e crescimento orgânico para fortalecer sua marca.</p>
+            </div>
+            <!-- Pack Criativos -->
+            <div class="service-card rounded-xl p-5">
+                <div class="service-icon"><span class="iconify text-2xl text-amber-400" data-icon="lucide:image"></span></div>
+                <h3 class="text-base md:text-lg font-bold mb-2">Pack Criativos para Anúncios</h3>
+                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Artes estáticas e vídeos profissionais formatados para Facebook, Instagram e Google Ads.</p>
+            </div>
+            <!-- Identidade Visual -->
+            <div class="service-card rounded-xl p-5">
+                <div class="service-icon"><span class="iconify text-2xl text-blue-400" data-icon="lucide:palette"></span></div>
+                <h3 class="text-base md:text-lg font-bold mb-2">Identidade Visual</h3>
+                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Design de logotipo único, paleta de cores e manual da marca para presença profissional.</p>
+            </div>
+            <!-- Google Business Profile -->
+            <div class="service-card rounded-xl p-5">
+                <div class="service-icon"><span class="iconify text-2xl text-emerald-400" data-icon="lucide:map-pin"></span></div>
+                <h3 class="text-base md:text-lg font-bold mb-2">Google Business Profile</h3>
+                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Otimização do perfil para aparecer nas pesquisas locais e no Google Maps.</p>
+            </div>
+            <!-- Consultoria Estratégica -->
+            <div class="service-card rounded-xl p-5">
+                <div class="service-icon"><span class="iconify text-2xl text-rose-400" data-icon="lucide:briefcase"></span></div>
+                <h3 class="text-base md:text-lg font-bold mb-2">Consultoria Estratégica</h3>
+                <p class="text-gray-400 text-xs md:text-sm leading-relaxed">Análise do negócio, definição de metas e plano de ação personalizado.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ==================== FAQ SECTION ==================== -->
+<!-- ==================== FAQ SECTION (SEM A PERGUNTA REMOVIDA) ==================== -->
 <section id="section-faq" class="section-content hidden py-16 md:py-24 px-4">
     <div class="max-w-3xl mx-auto">
         <div class="text-center mb-10 md:mb-14">
@@ -512,13 +521,7 @@
                 </button>
                 <div class="faq-answer hidden px-4 pb-4"><p class="text-gray-400 text-sm leading-relaxed">Sim! Todos os planos incluem acompanhamento via WhatsApp e relatórios mensais.</p></div>
             </div>
-            <div class="faq-item rounded-xl overflow-hidden">
-                <button onclick="toggleFaq(this)" class="faq-question w-full flex items-center justify-between p-4 text-left">
-                    <span class="text-sm md:text-base font-medium">Quanto tempo demora para ver resultados?</span>
-                    <span class="iconify faq-icon text-gray-400 text-xl transition-transform" data-icon="lucide:plus"></span>
-                </button>
-                <div class="faq-answer hidden px-4 pb-4"><p class="text-gray-400 text-sm leading-relaxed">Os primeiros resultados costumam aparecer nas primeiras 2-4 semanas.</p></div>
-            </div>
+            <!-- Pergunta "Quanto tempo demora para ver resultados?" foi REMOVIDA -->
             <div class="faq-item rounded-xl overflow-hidden">
                 <button onclick="toggleFaq(this)" class="faq-question w-full flex items-center justify-between p-4 text-left">
                     <span class="text-sm md:text-base font-medium">Qual o investimento mínimo em anúncios?</span>
@@ -610,7 +613,7 @@
             <div>
                 <h4 class="font-semibold mb-3 text-xs text-gray-400">Redes Sociais</h4>
                 <div class="flex gap-3">
-                    <a href="https://www.instagram.com/digitalhego.ao?igsh=c3ZrcnJtM2p4endk" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-indigo-500/20 transition-colors group">
+                    <a href="https://www.instagram.com/digitalhego.ao" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-indigo-500/20 transition-colors group">
                         <span class="iconify text-sm text-gray-400 group-hover:text-indigo-400 transition" data-icon="lucide:instagram"></span>
                     </a>
                 </div>
@@ -697,7 +700,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Animações com Intersection Observer
+// Animações
 if (window.IntersectionObserver) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
