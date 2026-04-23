@@ -1,336 +1,348 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hego Digital | Marketing Digital para Resultados Reais</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            50: '#eef2ff',
-                            100: '#e0e7ff',
-                            200: '#c7d2fe',
-                            300: '#a5b4fc',
-                            400: '#818cf8',
-                            500: '#6366f1',
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                            800: '#3730a3',
-                            900: '#312e81',
-                            950: '#1e1b4b',
-                        },
-                        accent: {
-                            400: '#fb923c',
-                            500: '#f97316',
-                            600: '#ea580c',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hego Digital - Marketing Digital em Angola</title>
+  <meta name="description" content="Estrategias de tráfego pago e branding para escalar o teu negócio em Angola." />
+  <meta name="google-site-verification" content="qAKOrjTHZhIhZeX39xFVKnzDWiTHxKjdwl1jGGtgO6g" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta property="og:title" content="Hego Digital - Marketing Digital em Angola" />
+  <meta property="og:description" content="Estrategias de trafego pago e branding para escalar o teu negocio em Angola." />
+  <meta property="og:image" content="https://hegodigital.online/images/logo.png" />
+  <meta property="og:url" content="https://hegodigital.online" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hego Digital - Marketing Digital em Angola" />
+  <meta name="twitter:description" content="Estrategias de trafego pago e branding para escalar o teu negocio em Angola." />
+  <meta name="twitter:image" content="https://hegodigital.online/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Hego Digital",
+    "url": "https://hegodigital.online",
+    "logo": "https://hegodigital.online/images/logo.png",
+    "description": "Marketing digital para resultados reais em Angola."
+  }
+  </script>
 </head>
-<body class="bg-gray-950 text-white font-sans antialiased">
+<body>
 
-    <!-- Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 md:h-20">
-                <a href="#" class="flex items-center gap-2 group">
-                    <img src="images/logo.png" alt="Hego Digital" class="w-10 h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0 group-hover:scale-110 transition-transform" loading="lazy">
-                    <span class="text-lg lg:text-xl font-bold text-white">Hego Digital</span>
-                </a>
-                <div class="flex-1 flex items-center justify-center gap-1 md:gap-4 lg:gap-8 flex-wrap md:flex-nowrap overflow-x-auto pb-2 scrollbar-hide">
-                    <a href="#inicio" class="nav-tab px-3 py-2 text-sm md:text-base font-semibold text-gray-300 hover:text-white transition-colors whitespace-nowrap flex-shrink-0" data-target="inicio">Início</a>
-                    <a href="#planos" class="nav-tab px-3 py-2 text-sm md:text-base font-semibold text-gray-300 hover:text-white transition-colors whitespace-nowrap flex-shrink-0" data-target="planos">Planos</a>
-                    <a href="#servicos" class="nav-tab px-3 py-2 text-sm md:text-base font-semibold text-gray-300 hover:text-white transition-colors whitespace-nowrap flex-shrink-0" data-target="servicos">Serviços</a>
-                    <a href="#contacto" class="nav-tab px-3 py-2 text-sm md:text-base font-semibold text-gray-300 hover:text-white transition-colors whitespace-nowrap flex-shrink-0" data-target="contacto">Contacto</a>
-                    <a href="https://forms.gle/5sNXwcPdKZbZCXYD7" target="_blank" rel="noopener" class="nav-tab px-3 py-2 text-white font-semibold bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-500 hover:to-primary-600 px-4 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap flex-shrink-0 text-sm md:text-base" data-ignore="true">Fazer Diagnóstico</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" data-nav="home">
+        <img src="images/logo.png" alt="Hego Digital Logo" class="logo-img" />
+      </a>
 
-    <!-- Hero Section -->
-<section id="inicio" class="section active relative min-h-screen flex items-center overflow-hidden">
-        <!-- Background Effects -->
-        <div class="absolute inset-0">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-600/20 rounded-full blur-3xl animate-pulse-slow"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent-500/15 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-500/5 rounded-full blur-3xl"></div>
-        </div>
-        <!-- Grid pattern -->
-        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 40px 40px;"></div>
+      <nav class="nav-desktop">
+        <button class="nav-tab" data-nav="home">Início</button>
+        <button class="nav-tab active" data-nav="planos">Planos</button>
+        <button class="nav-tab" data-nav="servicos">Serviços</button>
+        <button class="nav-tab" data-nav="contato">Contato</button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdADaw6e0DTBXD0YqjwB2KKdicjtI9Melci1pO77LEyQv7WCw/viewform" target="_blank" rel="noopener noreferrer" class="btn-primary header-cta">Fazer diagnóstico</a>
+      </nav>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-            <div class="max-w-3xl">
-                <div class="space-y-8">
-                    <div class="inline-flex items-center gap-2 bg-primary-500/10 border border-primary-500/20 rounded-full px-4 py-2 text-sm text-primary-300">
-                        <span class="w-2 h-2 bg-primary-400 rounded-full animate-pulse"></span>
-                        Marketing Digital em Angola
-                    </div>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-tight">
-                        Marketing digital para
-                        <span class="bg-gradient-to-r from-primary-400 via-primary-300 to-accent-400 bg-clip-text text-transparent"> resultados reais</span>
-                    </h1>
-                    <p class="text-lg sm:text-xl text-gray-400 max-w-xl leading-relaxed">
-                        Estratégias de tráfego pago e branding para escalar o teu negócio em Angola.
-                    </p>
-                </div>
-            </div>
+      <nav class="nav-mobile">
+        <button class="nav-tab-sm" data-nav="home">Início</button>
+        <button class="nav-tab-sm active" data-nav="planos">Planos</button>
+        <button class="nav-tab-sm" data-nav="servicos">Serviços</button>
+        <button class="nav-tab-sm" data-nav="contato">Contato</button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdADaw6e0DTBXD0YqjwB2KKdicjtI9Melci1pO77LEyQv7WCw/viewform" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">Fazer diagnóstico</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="section section-home" id="section-home">
+      <div class="home-bg">
+        <div class="home-shape home-shape-1"></div>
+        <div class="home-shape home-shape-2"></div>
+        <div class="home-shape home-shape-3"></div>
+        <div class="home-grid-pattern"></div>
+      </div>
+      <div class="home-content">
+        <div class="home-badge">
+          <span class="badge-dot"></span>
+          <span>Marketing digital para resultados reais</span>
         </div>
+        <h1 class="home-title">Marketing Digital <span class="text-brand">em Angola</span></h1>
+        <p class="home-subtitle">Estrategias de tráfego pago e branding para escalar o teu negócio em Angola.</p>
+        <button class="btn-white" data-nav="planos">Ver planos</button>
+      </div>
     </section>
 
-    <!-- Plans Section -->
-<section id="planos" class="section relative py-24 sm:py-32">
-        <div class="absolute inset-0 bg-gradient-to-b from-gray-950 via-primary-950/20 to-gray-950"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block text-primary-400 text-sm font-semibold tracking-wider uppercase mb-4">Planos</span>
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                    Escolha o plano ideal para o
-                    <span class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">seu negócio</span>
-                </h2>
-                <p class="text-gray-400 text-lg">Cada plano é pensado para entregar resultados reais e mensuráveis.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
-                <!-- Plan 1: PRESENÇA -->
-                <div class="group relative bg-gray-900/50 backdrop-blur border border-gray-800 rounded-3xl p-8 transition-all duration-300 hover:border-gray-700 hover:bg-gray-900/70 hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20">
-                    <div class="mb-8">
-                        <span class="text-xs font-bold tracking-widest text-primary-400 uppercase">Presença</span>
-                        <h3 class="text-2xl font-bold mt-2">Essencial Estratégico</h3>
-                    </div>
-                    <div class="mb-8">
-                        <span class="text-sm text-gray-500">Sob consulta</span>
-                        <div class="text-3xl font-bold mt-1">/mês</div>
-                    </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Diagnóstico inicial</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Setup de tráfego</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">1 campanha ativa</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Otimização semanal</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Relatório simples</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-primary-500/40">Direção estratégica básica</li>
-                    </ul>
-                </div>
-
-                <!-- Plan 2: PERFORMANCE (Popular) -->
-                <div class="group relative bg-gradient-to-b from-primary-900/40 to-gray-900/50 backdrop-blur border-2 border-primary-500/50 rounded-3xl p-8 transition-all duration-300 hover:border-primary-400 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary-500/20 md:scale-105">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-                        <span class="bg-gradient-to-r from-primary-500 to-accent-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg shadow-primary-500/30">Mais Popular</span>
-                    </div>
-                    <div class="mb-8">
-                        <span class="text-xs font-bold tracking-widest text-accent-400 uppercase">Performance</span>
-                        <h3 class="text-2xl font-bold mt-2">Crescimento</h3>
-                    </div>
-                    <div class="mb-8">
-                        <span class="text-sm text-gray-500">Sob consulta</span>
-                        <div class="text-3xl font-bold mt-1">/mês</div>
-                    </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Diagnóstico inicial</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Setup de tráfego + Estratégia de aquisição</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">2 campanhas ativas</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">A/B testing</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Suporte via WhatsApp</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Relatórios com insights reais</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-accent-500/40">Automação do WhatsApp Business</li>
-                    </ul>
-                </div>
-
-                <!-- Plan 3: ESCALA -->
-                <div class="group relative bg-gray-900/50 backdrop-blur border border-gray-800 rounded-3xl p-8 transition-all duration-300 hover:border-gray-700 hover:bg-gray-900/70 hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20">
-                    <div class="mb-8">
-                        <span class="text-xs font-bold tracking-widest text-green-400 uppercase">Escala</span>
-                        <h3 class="text-2xl font-bold mt-2">Estrutura Completa</h3>
-                    </div>
-                    <div class="mb-8">
-                        <span class="text-sm text-gray-500">Sob consulta</span>
-                        <div class="text-3xl font-bold mt-1">/mês</div>
-                    </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Diagnóstico completo</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Estratégia completa de funil</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Até 4 campanhas</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Otimização avançada</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Planeamento de crescimento</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Suporte via WhatsApp</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Relatórios com insights reais</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Automação do WhatsApp Business</li>
-                        <li class="text-gray-300 pl-4 border-l-2 border-green-500/40">Reunião estratégica mensal</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- PLANOS -->
+    <section class="section section-planos active" id="section-planos">
+      <div class="section-bg-planos"></div>
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Nossos Planos</p>
+          <h2 class="section-title">Planos</h2>
+          <p class="section-subtitle">Escolha o plano ideal para o seu negócio</p>
+          <p class="section-note">Cada plano é pensado para entregar resultados reais e mensuráveis.</p>
         </div>
+
+        <div class="planos-grid">
+          <!-- PRESENCA -->
+          <div class="plano-card">
+            <div class="plano-head">
+              <div>
+                <h3 class="plano-nome">PRESENCA</h3>
+                <p class="plano-tag">Essencial estrategico</p>
+              </div>
+            </div>
+            <div class="plano-divider"></div>
+            <p class="plano-inclui">Inclui</p>
+            <ul class="plano-list">
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Diagnóstico inicial</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Setup de tráfego</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Gestão de tráfego (Meta Ads)</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>2 campanhas ativas (até 6 anúncios)</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Otimização semanal</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Direção estratégica básica</li>
+            </ul>
+          </div>
+
+          <!-- PERFORMANCE -->
+          <div class="plano-card plano-destaque">
+            <div class="plano-accent-bar"></div>
+            <div class="plano-head">
+              <div>
+                <h3 class="plano-nome">PERFORMANCE</h3>
+                <p class="plano-tag">Crescimento</p>
+              </div>
+              <span class="plano-badge">Popular</span>
+            </div>
+            <div class="plano-divider"></div>
+            <p class="plano-inclui">Inclui</p>
+            <ul class="plano-list">
+              <li><svg class="check-icon check-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Diagnóstico profissional</li>
+              <li><svg class="check-icon check-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Setup de tráfego</li>
+              <li><svg class="check-icon check-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Gestão de tráfego (Meta Ads/Google Ads)</li>
+              <li><svg class="check-icon check-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>3 campanhas ativas (até 12 anúncios)</li>
+              <li><svg class="check-icon check-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>A/B testing</li>
+              <li><svg class="check-icon check-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
+              <li><svg class="check-icon check-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Relatórios com insights</li>
+              <li><svg class="check-icon check-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Automação WhatsApp Business</li>
+            </ul>
+          </div>
+
+          <!-- ESCALA -->
+          <div class="plano-card">
+            <div class="plano-head">
+              <div>
+                <h3 class="plano-nome">ESCALA</h3>
+                <p class="plano-tag">Estrutura completa</p>
+              </div>
+            </div>
+            <div class="plano-divider"></div>
+            <p class="plano-inclui">Inclui</p>
+            <ul class="plano-list">
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Diagnóstico completo</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Gestão de tráfego (Meta Ads/Google Ads)</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Estratégia completa de funil</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>4 campanhas (até 20 anúncios)</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Otimização avançada</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Suporte presencial & WhatsApp</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Relatórios avançados com insights</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Automação WhatsApp Business</li>
+              <li><svg class="check-icon check-gray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Reuniões estratégicas</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="planos-footer-note">Os pacotes são personalizados de acordo com o cenário da empresa e os objetivos definidos.</p>
+      </div>
     </section>
 
-    <!-- Services Section -->
-<section id="servicos" class="section relative py-24 sm:py-32">
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block text-primary-400 text-sm font-semibold tracking-wider uppercase mb-4">Serviços</span>
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                    Tudo que seu negócio
-                    <span class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent"> precisa</span>
-                </h2>
-                <p class="text-gray-400 text-lg">Tudo o que seu negócio precisa para crescer online</p>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Service 1: Landing Page -->
-                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-primary-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary-500/10 overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-primary-500/10 rounded-full blur-2xl group-hover:bg-primary-500/20 transition-all"></div>
-                    <div class="relative">
-                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-primary-300 transition-colors">Landing Page de Conversão</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Páginas otimizadas para converter visitantes em clientes. Design responsivo e foco em resultados.</p>
-                    </div>
-                </div>
-                <!-- Service 2: Instagram -->
-                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-pink-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-pink-500/10 overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-pink-500/10 rounded-full blur-2xl group-hover:bg-pink-500/20 transition-all"></div>
-                    <div class="relative">
-                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-pink-300 transition-colors">Gestão de Instagram</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Estratégia de conteúdo, calendário editorial e crescimento orgânico para fortalecer sua marca.</p>
-                    </div>
-                </div>
-                <!-- Service 3: Criativos -->
-                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-purple-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/10 overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all"></div>
-                    <div class="relative">
-                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-purple-300 transition-colors">Pack Criativos para Anúncios</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Artes estáticas e vídeos profissionais formatados para Facebook, Instagram e Google Ads.</p>
-                    </div>
-                </div>
-                <!-- Service 4: Identidade Visual -->
-                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-amber-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-500/10 overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/20 transition-all"></div>
-                    <div class="relative">
-                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-amber-300 transition-colors">Identidade Visual</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Design de logotipo único, paleta de cores e manual da marca para presença profissional.</p>
-                    </div>
-                </div>
-                <!-- Service 5: Google Business -->
-                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-emerald-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/10 overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all"></div>
-                    <div class="relative">
-                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-emerald-300 transition-colors">Google Business Profile</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Otimização do perfil para aparecer nas pesquisas locais e no Google Maps.</p>
-                    </div>
-                </div>
-                <!-- Service 6: Consultoria -->
-                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 transition-all duration-300 hover:border-cyan-500/50 hover:bg-gray-900/80 hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/10 overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all"></div>
-                    <div class="relative">
-                        <h3 class="text-xl font-bold mb-4 text-white group-hover:text-cyan-300 transition-colors">Consultoria Estratégica</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Análise do negócio, definição de metas e plano de ação personalizado.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- SERVICOS -->
+    <section class="section section-servicos" id="section-servicos">
+      <div class="section-bg-servicos"></div>
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">O que fazemos</p>
+          <h2 class="section-title">Serviços</h2>
+          <p class="section-subtitle">Soluções digitais para alcançar as vendas do seu negócio</p>
         </div>
+
+        <div class="servicos-grid">
+          <div class="servico-card" style="--card-color: #3B82F6; --card-bg: rgba(59,130,246,0.08); --card-border: rgba(59,130,246,0.25);">
+            <div class="servico-accent"></div>
+            <div class="servico-head">
+              <div class="servico-dot"></div>
+              <h3 class="servico-titulo">Landing Page de Conversao</h3>
+            </div>
+            <p class="servico-desc">Paginas otimizadas para converter visitantes em clientes. Design responsivo e foco em resultados.</p>
+          </div>
+
+          <div class="servico-card" style="--card-color: #0EA5E9; --card-bg: rgba(14,165,233,0.08); --card-border: rgba(14,165,233,0.25);">
+            <div class="servico-accent"></div>
+            <div class="servico-head">
+              <div class="servico-dot"></div>
+              <h3 class="servico-titulo">Sites Institucionais</h3>
+            </div>
+            <p class="servico-desc">Desenvolvimento de sites institucionais profissionais com presenca digital marcante.</p>
+          </div>
+
+          <div class="servico-card" style="--card-color: #F59E0B; --card-bg: rgba(245,158,11,0.08); --card-border: rgba(245,158,11,0.25);">
+            <div class="servico-accent"></div>
+            <div class="servico-head">
+              <div class="servico-dot"></div>
+              <h3 class="servico-titulo">Pack Criativos para Anuncios</h3>
+            </div>
+            <p class="servico-desc">Artes estaticas e videos profissionais formatados para Facebook, Instagram e Google Ads.</p>
+          </div>
+
+          <div class="servico-card" style="--card-color: #8B5CF6; --card-bg: rgba(139,92,246,0.08); --card-border: rgba(139,92,246,0.25);">
+            <div class="servico-accent"></div>
+            <div class="servico-head">
+              <div class="servico-dot"></div>
+              <h3 class="servico-titulo">Identidade Visual</h3>
+            </div>
+            <p class="servico-desc">Design de logotipo unico, paleta de cores e manual da marca para presenca profissional.</p>
+          </div>
+
+          <div class="servico-card" style="--card-color: #10B981; --card-bg: rgba(16,185,129,0.08); --card-border: rgba(16,185,129,0.25);">
+            <div class="servico-accent"></div>
+            <div class="servico-head">
+              <div class="servico-dot"></div>
+              <h3 class="servico-titulo">Google Business Profile</h3>
+            </div>
+            <p class="servico-desc">Otimizacao do perfil para aparecer nas pesquisas locais e no Google Maps.</p>
+          </div>
+
+          <div class="servico-card" style="--card-color: #F43F5E; --card-bg: rgba(244,63,94,0.08); --card-border: rgba(244,63,94,0.25);">
+            <div class="servico-accent"></div>
+            <div class="servico-head">
+              <div class="servico-dot"></div>
+              <h3 class="servico-titulo">Consultoria Estrategica</h3>
+            </div>
+            <p class="servico-desc">Analise do negocio, definicao de metas e plano de acao personalizado.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-<section id="contacto" class="section relative py-24 sm:py-32">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block text-primary-400 text-sm font-semibold tracking-wider uppercase mb-4">Contacto</span>
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                    Vamos
-                    <span class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">conversar?</span>
-                </h2>
-                <p class="text-gray-400 text-lg">Estamos prontos para ajudar seu negócio a crescer</p>
-            </div>
-
-            <div class="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <!-- Email -->
-                <a href="mailto:geral@hegodigital.online" class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-7 text-center transition-all hover:border-primary-500/50 hover:bg-gray-900/80 hover:-translate-y-1">
-                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">Email</p>
-                    <p class="text-white font-medium mb-3">geral@hegodigital.online</p>
-                    <span class="text-primary-400 text-sm font-medium">Enviar email</span>
-                </a>
-                <!-- Phone -->
-                <a href="tel:+244948466885" class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-7 text-center transition-all hover:border-green-500/50 hover:bg-gray-900/80 hover:-translate-y-1">
-                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">Telefone</p>
-                    <p class="text-white font-medium mb-3">+244 948 466 885</p>
-                    <span class="text-green-400 text-sm font-medium">Ligar agora</span>
-                </a>
-                <!-- Location -->
-                <div class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-7 text-center transition-all hover:border-accent-500/50 hover:bg-gray-900/80 hover:-translate-y-1">
-                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">Localização</p>
-                    <p class="text-white font-medium mb-3">Luanda, Angola</p>
-                    <span class="text-accent-400 text-sm font-medium">Atendemos todo o país</span>
-                </div>
-            </div>
+    <!-- CONTATO -->
+    <section class="section section-contato" id="section-contato">
+      <div class="section-bg-contato"></div>
+      <div class="container container-narrow">
+        <div class="section-header">
+          <p class="section-label">Fale connosco</p>
+          <h2 class="section-title">Vamos conversar?</h2>
+          <p class="section-subtitle">Estamos prontos para ajudar seu negocio a crescer.</p>
         </div>
+
+        <div class="contato-grid">
+          <!-- Email -->
+          <a href="mailto:geral@hegodigital.online" class="contato-card">
+            <div class="contato-icon" style="background-color: rgba(59,130,246,0.15);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            </div>
+            <div class="contato-info">
+              <p class="contato-label">Email</p>
+              <p class="contato-value">geral@hegodigital.online</p>
+            </div>
+          </a>
+
+          <!-- Telefone -->
+          <a href="tel:+244948466885" class="contato-card">
+            <div class="contato-icon" style="background-color: rgba(16,185,129,0.15);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            </div>
+            <div class="contato-info">
+              <p class="contato-label">Telefone</p>
+              <p class="contato-value">+244 948 466 885</p>
+            </div>
+          </a>
+
+          <!-- Localizacao -->
+          <div class="contato-card">
+            <div class="contato-icon" style="background-color: rgba(244,63,94,0.15);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#F43F5E" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            </div>
+            <div class="contato-info">
+              <p class="contato-label">Localizacao</p>
+              <p class="contato-value">Luanda, Angola</p>
+              <p class="contato-sub">Atendemos todo o pais</p>
+            </div>
+          </div>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/digitalhego.ao?igsh=c3ZrcnJtM2p4endk" target="_blank" rel="noopener noreferrer" class="contato-card">
+            <div class="contato-icon" style="background-color: rgba(228,64,95,0.15);">
+              <svg viewBox="0 0 24 24" fill="#E4405F"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </div>
+            <div class="contato-info">
+              <p class="contato-label">Instagram</p>
+              <p class="contato-value">@digitalhego.ao</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-gray-800/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-                <!-- Brand -->
-                <div class="sm:col-span-2 lg:col-span-1">
-                    <a href="#" class="flex items-center gap-2 mb-5">
-                        <img src="images/logo.png" alt="Hego Digital" class="w-10 h-10 object-contain flex-shrink-0" loading="lazy">
-                    </a>
-                    <p class="text-gray-500 text-sm leading-relaxed">Marketing digital para resultados reais em Angola.</p>
-                </div>
-                <!-- Navigation -->
-                <div>
-                    <h4 class="text-sm font-semibold text-white mb-5 uppercase tracking-wider">Navegação</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#planos" class="text-sm text-gray-500 hover:text-white transition-colors">Planos</a></li>
-                        <li><a href="#servicos" class="text-sm text-gray-500 hover:text-white transition-colors">Serviços</a></li>
-                        <li><a href="#contacto" class="text-sm text-gray-500 hover:text-white transition-colors">Contato</a></li>
-                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdADaw6e0DTBXD0YqjwB2KKdicjtI9Melci1pO77LEyQv7WCw/viewform" target="_blank" class="text-sm text-gray-500 hover:text-white transition-colors">Diagnóstico</a></li>
-                    </ul>
-                </div>
-                <!-- Contact -->
-                <div>
-                    <h4 class="text-sm font-semibold text-white mb-5 uppercase tracking-wider">Contacto</h4>
-                    <ul class="space-y-3">
-                        <li><a href="tel:+244948466885" class="text-sm text-gray-500 hover:text-white transition-colors">+244 948 466 885</a></li>
-                        <li><a href="mailto:geral@hegodigital.online" class="text-sm text-gray-500 hover:text-white transition-colors">geral@hegodigital.online</a></li>
-                        <li><span class="text-sm text-gray-500">Luanda, Angola</span></li>
-                    </ul>
-                </div>
-                <!-- Social -->
-                <div>
-                    <h4 class="text-sm font-semibold text-white mb-5 uppercase tracking-wider">Redes Sociais</h4>
-                    <a href="https://www.instagram.com/digitalhego.ao?igsh=c3ZrcnJtM2p4endk" target="_blank" class="inline-flex items-center gap-3 text-sm text-gray-500 hover:text-white transition-colors">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-label="Instagram"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-<parameter name="aria-label">
-                        Siga-nos no Instagram
-                    </a>
-                </div>
-            </div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="images/logo.png" alt="Hego Digital Logo" class="logo-img" />
+          </div>
+          <p class="footer-desc">Marketing digital para resultados reais em Angola.</p>
         </div>
-        <div class="border-t border-gray-800/50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p class="text-xs text-gray-600">© 2026 Hego Digital. Todos os direitos reservados.</p>
-                <a href="https://www.instagram.com/digitalhego.ao?igsh=c3ZrcnJtM2p4endk" target="_blank" class="text-xs text-gray-600 hover:text-gray-400 transition-colors">@digitalhego.ao</a>
-            </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <p class="footer-col-title">Navegacao</p>
+          <ul class="footer-links">
+            <li><button data-nav="planos" class="footer-link">Planos</button></li>
+            <li><button data-nav="servicos" class="footer-link">Serviços</button></li>
+            <li><button data-nav="contato" class="footer-link">Contato</button></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdADaw6e0DTBXD0YqjwB2KKdicjtI9Melci1pO77LEyQv7WCw/viewform" target="_blank" rel="noopener noreferrer" class="footer-link">Fazer diagnóstico</a></li>
+          </ul>
         </div>
-    </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://api.whatsapp.com/send/?phone=244948466885&text=Ol%C3%A1+Hego+Digital&type=phone_number&app_absent=0" target="_blank" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-green-500 hover:bg-green-400 rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 transition-all hover:scale-110 group" aria-label="WhatsApp">
-        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c0-5.45 4.435-9.884 9.884-9.884 2.629 0 5.103 1.026 6.969 2.888a9.824 9.824 0 012.888 6.969c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <span class="absolute right-full mr-3 bg-gray-900 text-white text-xs font-medium px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">Fale connosco!</span>
-    </a>
+        <!-- Contact -->
+        <div class="footer-col">
+          <p class="footer-col-title">Contacto</p>
+          <ul class="footer-links">
+            <li><a href="tel:+244948466885" class="footer-link">+244 948 466 885</a></li>
+            <li><a href="mailto:geral@hegodigital.online" class="footer-link">geral@hegodigital.online</a></li>
+            <li><span class="footer-link footer-link-static">Luanda, Angola</span></li>
+          </ul>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- Social -->
+        <div class="footer-col">
+          <p class="footer-col-title">Redes Sociais</p>
+          <a href="https://www.instagram.com/digitalhego.ao?igsh=c3ZrcnJtM2p4endk" target="_blank" rel="noopener noreferrer" class="footer-instagram">
+            <svg class="instagram-icon" viewBox="0 0 24 24" fill="#E4405F"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            Siga-nos no Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Hego Digital. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/244948466885" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contato via WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
