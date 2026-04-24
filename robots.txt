@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.hegodigital.online/sitemap.xml

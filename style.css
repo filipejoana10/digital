@@ -645,7 +645,7 @@ ul {
 
 .servico-desc {
   font-size: 0.75rem;
-  color: var(--gray-400);
+  color: rgba(255, 255, 255, 0.92);
   line-height: 1.625;
 }
 
