@@ -42,5 +42,5 @@
     });
   });
 
-  navigateTo('planos');
+  navigateTo('home');
 })();
