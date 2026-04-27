@@ -1,3 +1,11 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /*?*
 Sitemap: https://www.hegodigital.online/sitemap.xml
+Host: www.hegodigital.online
+
+# Para subdomínios use um robots.txt separado em cada subdomínio.

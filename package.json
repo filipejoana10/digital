@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "echo 'Build complete - static HTML/CSS/JS project, no build step required.' && exit 0"
+    "build": "echo 'Build complete - static HTML/CSS/JS project, no build step required.' && exit 0",
+    "generate-sitemap": "python generate_sitemap.py"
   }
 }
