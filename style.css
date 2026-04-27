@@ -427,7 +427,7 @@ ul {
 .planos-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.25rem;
   position: relative;
   z-index: 10;
 }
@@ -439,6 +439,8 @@ ul {
   background-color: rgba(15, 21, 40, 0.6);
   border: 1px solid rgba(47, 55, 82, 0.4);
   transition: all 0.5s ease;
+  padding: 1.5rem 1.5rem 2rem;
+  min-height: 28rem;
 }
 
 .plano-card:hover {
@@ -468,23 +470,38 @@ ul {
 
 .plano-head {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 1rem;
   padding: 1.25rem 1.25rem 0;
 }
 
+.plano-head > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .plano-nome {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--white);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 .plano-tag {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   color: var(--brand-400);
   font-weight: 500;
   margin-top: 0.25rem;
+}
+
+.plano-descricao {
+  font-size: 0.95rem;
+  color: var(--gray-300);
+  line-height: 1.6;
+  max-width: 30rem;
+  margin-top: 0.5rem;
 }
 
 .plano-badge {
