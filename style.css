@@ -391,13 +391,17 @@ ul {
 .home-subtitle {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--gray-400);
-  max-width: 28rem;
+  max-width: 45rem;
+  width: min(100%, 45rem);
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.625;
+  line-height: 1.45;
   font-weight: 300;
+  padding: 0.75rem 0;
+  white-space: normal;
+  overflow: visible;
 }
 
 /* --- Planos Section --- */
@@ -426,21 +430,25 @@ ul {
 
 .planos-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 0.85rem;
+  align-items: stretch;
   position: relative;
   z-index: 10;
 }
 
 .plano-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   border-radius: 1rem;
-  overflow: hidden;
-  background-color: rgba(15, 21, 40, 0.6);
-  border: 1px solid rgba(47, 55, 82, 0.4);
-  transition: all 0.5s ease;
-  padding: 2rem 1.75rem 2.25rem;
-  min-height: 30rem;
+  overflow: visible;
+  background-color: rgba(15, 21, 40, 0.68);
+  border: 1px solid rgba(47, 55, 82, 0.45);
+  transition: all 0.35s ease;
+  padding: 1.1rem 1rem 1.1rem;
+  min-height: auto;
 }
 
 .plano-card:hover {
@@ -450,13 +458,43 @@ ul {
 }
 
 .plano-destaque {
-  background: linear-gradient(to bottom, rgba(37, 99, 235, 0.15), var(--midnight-800));
-  border: 2px solid rgba(37, 99, 235, 0.4);
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.24), rgba(15, 23, 42, 0.95));
+  border: 2px solid rgba(37, 99, 235, 0.55);
+  box-shadow: 0 22px 50px -18px rgba(37, 99, 235, 0.35);
+  transform: translateY(-0.25rem);
+}
+
+.plano-destaque::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  background: radial-gradient(circle at top center, rgba(59, 130, 246, 0.18), transparent 45%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .plano-destaque:hover {
-  box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.15);
-  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 30px 60px -20px rgba(37, 99, 235, 0.4);
+  border-color: rgba(37, 99, 235, 0.65);
+}
+
+.plano-destaque .plano-head {
+  padding-top: 1.2rem;
+}
+
+.plano-destaque .plano-subtitle {
+  color: #7dd3fc;
+}
+
+.plano-destaque .plano-badge {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(14, 165, 233, 0.18);
+}
+
+.plano-destaque .plano-highlight {
+  color: #dbeafe;
 }
 
 .plano-accent-bar {
@@ -470,23 +508,41 @@ ul {
 
 .plano-head {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1.25rem 1.5rem 0;
+  gap: 0.6rem;
+  padding: 1rem 1.2rem 0;
 }
 
 .plano-head > div {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.3rem;
 }
 
 .plano-nome {
-  font-size: 1.05rem;
+  font-size: 0.96rem;
   font-weight: 700;
   color: var(--white);
   letter-spacing: -0.02em;
+}
+
+.plano-subtitle {
+  font-size: 0.84rem;
+  color: var(--brand-400);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.plano-highlight {
+  color: var(--gray-300);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  max-width: 100%;
+  margin-top: 0.35rem;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .plano-tag {
@@ -519,33 +575,34 @@ ul {
   width: 100%;
   height: 1px;
   background-color: rgba(47, 55, 82, 0.5);
-  margin: 1.25rem 0;
+  margin: 1rem 0;
 }
 
 .plano-inclui {
   padding: 0 1.25rem;
-  font-size: 0.6875rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: var(--gray-500);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.55rem;
 }
 
 .plano-list {
-  padding: 0 1.25rem 1.25rem;
+  padding: 0 1.25rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 0.55rem;
 }
 
 .plano-list li {
   display: flex;
   align-items: flex-start;
-  gap: 0.625rem;
-  font-size: 0.75rem;
+  gap: 0.55rem;
+  font-size: 0.78rem;
   color: var(--gray-400);
-  line-height: 1.5;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .check-icon {
@@ -930,7 +987,9 @@ button.footer-link:hover {
   }
 
   .home-subtitle {
-    font-size: 1.125rem;
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .btn-white {
@@ -963,19 +1022,27 @@ button.footer-link:hover {
   }
 
   .planos-grid {
-    gap: 1.25rem;
+    gap: 1rem;
   }
 
   .plano-head {
-    padding: 1.75rem 1.75rem 0;
+    padding: 1.5rem 1.5rem 0;
   }
 
   .plano-nome {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .plano-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .plano-highlight {
+    font-size: 0.9rem;
   }
 
   .plano-tag {
-    font-size: 0.875rem;
+    font-size: 0.82rem;
   }
 
   .plano-inclui {
@@ -1122,12 +1189,106 @@ button.footer-link:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .planos-grid {
+    gap: 0.9rem;
+  }
+
+  .plano-card {
+    padding: 1.25rem 1rem 1.25rem;
+  }
+
+  .plano-head {
+    padding: 1rem 1rem 0;
+  }
+
+  .plano-subtitle {
+    font-size: 0.82rem;
+  }
+
+  .plano-highlight {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .plano-inclui {
+    padding: 0 1rem;
+    font-size: 0.68rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .plano-list {
+    padding: 0 1rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .plano-list li {
+    font-size: 0.76rem;
+  }
+
+  .home-content {
+    padding: 4rem 1rem 3rem;
+    max-width: 100%;
+  }
+
+  .home-title {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .home-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+    white-space: normal;
+    overflow: visible;
+    max-width: 100%;
+  }
+
+  .home-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.85rem;
+  }
+
+  .planos-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .plano-card {
+    padding: 1rem 0.9rem 1rem;
+  }
+
+  .plano-head {
+    padding: 0.9rem 1rem 0;
+  }
+
+  .plano-nome {
+    font-size: 0.92rem;
+  }
+
+  .plano-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .plano-highlight {
+    font-size: 0.82rem;
+  }
+
+  .plano-list li {
+    font-size: 0.75rem;
+    line-height: 1.45;
+  }
+}
+
 /* ============================================
    RESPONSIVE - md (768px+)
    ============================================ */
 @media (min-width: 768px) {
   .planos-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(22rem, 1fr));
   }
 }
 
@@ -1135,12 +1296,19 @@ button.footer-link:hover {
    RESPONSIVE - lg (1024px+)
    ============================================ */
 @media (min-width: 1024px) {
+  .planos-grid {
+    grid-template-columns: repeat(3, minmax(24rem, 1fr));
+    gap: 1.5rem;
+  }
   .home-title {
     font-size: 4.5rem;
   }
 
   .home-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    white-space: normal;
+    overflow: visible;
+    max-width: 100%;
   }
 
   .servicos-grid {
